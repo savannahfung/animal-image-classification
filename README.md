@@ -25,44 +25,32 @@ The baseline model provided is a simple Convolutional Neural Network (CNN) desig
 The task is to modify the provided baseline code to improve the model's performance in classifying animal images.
 
 ## Project Structure
-animal-image-classification/
-│
-├── dataset/                     # Directory for the dataset
-├── models/
-│   ├── base_class.py            # Base class for image classification models
-│   ├── baseline_cnn.py          # Baseline CNN model definition
-│   ├── final_baseline.py        # Final baseline model definition
-│   ├── mobilenet_v3_quant.py    # Quantizable MobileNetV3 model definition
-│   └── mobilenet_v3.py          # MobileNetV3 model definition
-│
-├── notebooks/
-│   ├── baseline_cnn.ipynb       # Notebook for training and testing the baseline CNN model
-│   ├── final_baseline.ipynb     # Notebook for training and testing the final baseline model
-│   ├── final_model.ipynb        # Notebook for training and testing the final model
-│   └── mobilenet_v3.ipynb       # Notebook for training and testing the MobileNetV3 model
-│
-├── results/                     # Directory for saving model results and histories
-│   ├── baseline_cnn_history.pth
-│   ├── baseline_cnn.pth
-│   ├── final_baseline_history.pth
-│   ├── final_baseline.pth
-│   ├── final_model_history.pth
-│   ├── final_model.pth
-│   ├── final_model_quant.pth
-│   ├── mobilenet_v3_history.pth
-│   └── mobilenet_v3.pth
-│
-├── src/
-│   ├── device_manager.py        # Script to manage device configuration
-│   ├── evaluate.py              # Script to evaluate model performance
-│   ├── FLOPs_counter.py         # Script to compute FLOPs for the model
-│   ├── plot.py                  # Script for plotting results
-│   ├── train_lr_scheduler.py    # Script to train the model with learning rate scheduler
-│   ├── train.py                 # Script to train the model
-│
-├── .gitignore
-├── README.md                    # This README file
-└── requirements.txt             # Python dependencies
+
+`animal-image-classification/`
+
+- `dataset/`: Directory for the dataset
+- `models/`
+  - `base_class.py`: Base class for image classification models
+  - `baseline_cnn.py`: Baseline CNN model definition
+  - `final_baseline.py`: Final baseline model definition
+  - `mobilenet_v3_quant.py`: Quantizable MobileNetV3 model definition
+  - `mobilenet_v3.py`: MobileNetV3 model definition
+- `notebooks/`
+  - `baseline_cnn.ipynb`: Notebook for training and testing the baseline CNN model
+  - `final_baseline.ipynb`: Notebook for training and testing the final baseline model
+  - `final_model.ipynb`: Notebook for training and testing the final model
+  - `mobilenet_v3.ipynb`: Notebook for training and testing the MobileNetV3 model
+- `results/`: Directory for saving model results and training histories
+- `src/`
+  - `device_manager.py`: Script to manage device configuration
+  - `evaluate.py`: Script to evaluate model performance
+  - `FLOPs_counter.py`: Script to compute FLOPs for the model
+  - `plot.py`: Script for plotting results
+  - `train_lr_scheduler.py`: Script to train the model with learning rate scheduler
+  - `train.py`: Script to train the model
+- `.gitignore`
+- `README.md`: This README file
+- `requirements.txt`: Python dependencies
 
 ## Getting Started
 
