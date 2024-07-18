@@ -24,6 +24,59 @@ The baseline model provided is a simple Convolutional Neural Network (CNN) desig
 
 The task is to modify the provided baseline code to improve the model's performance in classifying animal images.
 
+## Getting Started
+
+### Prerequisites
+
+- Python 3.7 or later
+- PyTorch
+- Torchvision
+- Other dependencies specified in `requirements.txt`
+
+### Installation
+
+1. Clone this repository.
+
+   ```bash
+   git clone https://github.com/savannahfung/animal-image-classification.git
+   cd animal-image-classification
+   ```
+
+2. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Running the Notebooks
+
+Navigate to the `notebooks` directory and open the provided Jupyter notebooks to view the performance of different models:
+
+- Baseline model: `baseline_cnn.ipynb`
+- Final baseline model: `final_baseline.ipynb`
+- MobileNetV3 model: `mobilenet_v3.ipynb`
+- Quantizable MobileNetV3 model (final model): `final_model.ipynb`
+
+### Model Definition
+
+Model definitions are provided in the `model` directory:
+
+- Base class for image classification models: `base_class.py`
+- Baseline CNN model definition: `baseline_cnn.py`
+- Final baseline model definition: `final_baseline.py`
+- MobileNetV3 model definition: `mobilenet_v3.py`
+- Quantizable MobileNetV3 model definition: `mobilenet_v3_quant.py`
+
+### Training and Evaluating the Model
+
+Use the provided scripts in the `src` directory to train the model and evaluate the model performance:
+
+- Train model: `train.py`
+- Train model with learning rate scheduler: `train_lr_scheduler.py`
+- Evaluate model: `evaluate.py`
+- Plot results: `plot.py`
+- Compute number of FLOPs: `FLOPs_counter.py`
+
 ## Project Structure
 
 `animal-image-classification/`
@@ -51,47 +104,3 @@ The task is to modify the provided baseline code to improve the model's performa
 - `.gitignore`
 - `README.md`: This README file
 - `requirements.txt`: Python dependencies
-
-## Getting Started
-
-### Prerequisites
-
-- Python 3.7 or later
-- PyTorch
-- Torchvision
-- Other dependencies specified in `requirements.txt`
-
-### Installation
-
-1. Clone this repository.
-
-   ```bash
-   git clone https://github.com/savannahfung/animal-image-classification.git
-   cd animal-image-classification
-   ```
-
-2. Install the required packages:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-### Running the Notebooks
-
-Navigate to the notebooks directory and open any of the provided Jupyter notebooks to view the completed tasks:
-
-- Baseline Model: `baseline_cnn.ipynb`
-- Final Baseline Model: `final_baseline.ipynb`
-- MobileNetV3 Model: `mobilenet_v3.ipynb`
-- Final Model: `final_model.ipynb`
-
-### Evaluating the Model
-
-Use the provided scripts in the src directory to evaluate the model performance:
-
-- Evaluate Model: `evaluate.py`
-- Compute FLOPs: `FLOPs_counter.py`
-
-### Plotting Results
-
-Use the `plot.py` script to generate plots for the training and evaluation results.
