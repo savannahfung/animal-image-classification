@@ -59,7 +59,7 @@ Navigate to the `notebooks` directory and open the provided Jupyter notebooks to
 
 ### Model Definition
 
-Model definitions are provided in the `model` directory:
+Model definitions are provided in the `models` directory:
 
 - Base class for image classification models: `base_class.py`
 - Baseline CNN model definition: `baseline_cnn.py`
